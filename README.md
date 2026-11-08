@@ -13,3 +13,11 @@ Kaspar Pedaja
 Carmen Jõekalda
 
 Liina Taluste
+
+## Rühmatöö normid
+• On kohal rühma kohtumistel ja osaleb aktiivselt.
+• Teeb oma osa tööst õigeajaliselt.
+• Aitab vajadusel teisi.
+• Annab tagasisidet ja on valmis kriitilist tagasisidet vastu võtma
+• Tunnustab teiste tööd ja pakutud ideid.
+• Selgitab oma mõtteid arusaadavalt.
