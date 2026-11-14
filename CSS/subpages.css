@@ -56,8 +56,8 @@ main {
 }
 
 .box {
-    background: #19112B;
-    border: 1px solid #A855F7;
+    background: rgba(25, 17, 43, 0.55);
+    border: 1px solid rgba(168, 85, 247, 0.3);
     border-radius: 24px;
     padding: 48px;
     width: 100%;
@@ -70,25 +70,33 @@ main {
 
 .back-button {
     align-self: flex-start;
-    background: #3B0764;
+    background: rgba(59, 7, 100, 0.4);
     color: #D8B4FE;
     padding: 6px 12px;
     border-radius: 9999px;
     font-size: 12px;
     cursor: pointer;
-    border: 1px solid #A855F7;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.back-button svg {
+    flex-shrink: 0;
+    fill: #D8B4FE;
 }
 
 .back-button:hover {
-    background: #1d1230;
+    color: #ffffff;
 }
 
 .mode-name {
-    background-color: #A855F7;
+    background-color: rgba(168, 85, 247, 0.2);
     color: #D8B4FE;
     font-size: 12px;
     padding: 6px 14px;
+    border: 1px solid rgba(168, 85, 247, 0.3);
     border-radius: 9999px;
 }
 
@@ -110,8 +118,8 @@ p {
     width: 192px;
     height: 192px;
     border-radius: 50%;
-    background: #19112B;
-    border: 2px solid #A855F7;
+    background: rgba(25, 17, 43, 0.55);
+    border: 2px solid rgba(168, 85, 247, 0.4);
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -161,9 +169,9 @@ p {
 }
 
 .button2 {
-    background-color: #19112B;
+    background-color: rgba(25, 17, 43, 0.55);
     color: #E9D5FF;
-    border: 1px solid #A855F7;
+    border: 1px solid rgba(168, 85, 247, 0.15);
 }
 
 .button2:hover {
