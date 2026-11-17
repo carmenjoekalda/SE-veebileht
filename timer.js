@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const modeElement = document.querySelector(".mode-name");
     const timerDisplay = document.querySelector(".timer-value");
-    const soundLabel = document.querySelector(".timer-h3");
+    const soundLabel = document.querySelector(".timer h3");
     const beginBtn = document.querySelector(".button1");
     const changeSoundBtn = document.querySelector(".button2");
     const timerCircle = document.querySelector(".timer");
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             whiteNoise.buffer = noiseBuffer;
             whiteNoise.loop = true;
 
-            const filter = audioCtx.createBufferSource();
+            const filter = audioCtx.createBiquadFilter();
             filter.type = "lowpass";
             filter.frequency.value = type === "white" ? 1800 : 500;
 
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function pauseMedia() {
         audioPlayer.pause();
-        if (usingSynth) stopSynth;
+        if (usingSynth) stopSynth();
     }
 
     // Timeri loogika
@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modalOverlay.classList.remove("show");
     });
 
-    document.getElementById("cancel-modal").addEventListener("click", () => {
+    document.getElementById("confirm-start").addEventListener("click", () => {
         const parsed = parseInt(customInput.value, 10);
         durationMinutes = (!isNaN(parsed) && parsed > 0) ? Math.min(parsed, 240) : 25;
         remainingSeconds = durationMinutes * 60;
