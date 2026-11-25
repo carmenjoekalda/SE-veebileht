@@ -17,7 +17,7 @@
 <body>
     <header>
         <h2>VibeSpace</h2>
-        <button class="btnh" onclick="window.location.href='about.html'">ABOUT</button>
+        <button class="btnh" onclick="openModal()">ABOUT</button>
     </header>
     <main>
         <div class="box">
@@ -41,8 +41,19 @@
             </div>
         </div>
     </main>
+
+    <div id="aboutModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h2>About VibeSpace</h2>
+            <p>VibeSpace is an aesthetic ambient companion designed to help you curate your mental atmosphere. Whether
+                you need deep focus rhythm or tranquil relaxation noise, we provide the serene backdrop to your day.</p>
+            <button class="got-it-btn" onclick="closeModal()">Got it</button>
+        </div>
+    </div>
     <footer>© 2026 VibeSpace. Crafted for peaceful minds.</footer>
     <script src="timer.js"></script>
+    <script src="about.js"></script>
 </body>
 
 </html>
