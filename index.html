@@ -1,60 +1,71 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <title>VibeSpace</title>
-        <link rel="icon" href="Visuals/favicon.ico">
-        <link rel="stylesheet" href="CSS/index.css">
+    <meta charset="UTF-8">
+    <title>VibeSpace</title>
+    <link rel="icon" href="Visuals/favicon.ico">
+    <link rel="stylesheet" href="CSS/index.css">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <header>
+    <header>
 
-            <h2>VibeSpace</h2>
-            <button class="btnh" onclick="window.location.href='about.html'">ABOUT</button>
+        <h2>VibeSpace</h2>
+        <button class="btnh" onclick="openModal()">ABOUT</button>
 
-        </header>
+    </header>
 
-        <main>
-            
-            <p class="info">
-                <span class="dot"></span>
-                Your immersive ambient sanctuary
-            </p>
+    <main>
 
-            <h1>Welcome. Choose your vibe for the day.</h1>
-            <p>Curate your mental space for deep focus or peaceful rest.</p>
+        <p class="info">
+            <span class="dot"></span>
+            Your immersive ambient sanctuary
+        </p>
 
-            <div class="buttons">
+        <h1>Welcome. Choose your vibe for the day.</h1>
+        <p>Curate your mental space for deep focus or peaceful rest.</p>
 
-                <button class="btn1" onclick="window.location.href='relax.html'">
-                    <h2>Relax & Wind Down</h2>
+        <div class="buttons">
+
+            <button class="btn1" onclick="window.location.href='relax.html'">
+                <h2>Relax & Wind Down</h2>
                     Soft lo-fi melodies, white/brown noise, and gentle ambient soundscapes designed to release the day's stress.
-                    <hr>
+                <hr>
                     <p>Start unwinding  <span class="arrow">→</span></p>
-                </button>
+            </button>
 
-                <button class="btn2" onclick="window.location.href='focus.html'">
-                    <h2>Focus & Work</h2>
-                    Binaural beats, steady rhythmic frequencies, and immersive deep-work soundscapes for peak productivity.
-                    <hr>
+            <button class="btn2" onclick="window.location.href='focus.html'">
+                <h2>Focus & Work</h2>
+                Binaural beats, steady rhythmic frequencies, and immersive deep-work soundscapes for peak productivity.
+                <hr>
                     <p>Enter flow state  <span class="arrow">→</span></p>
-                </button>
+            </button>
 
-            </div>
+        </div>
 
-        </main>
+    </main>
 
-        <footer>© 2026 VibeSpace. Crafted for peaceful minds.</footer>
+    <div id="aboutModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h2>About VibeSpace</h2>
+            <p>VibeSpace is an aesthetic ambient companion designed to help you curate your mental atmosphere. Whether
+                you need deep focus rhythm or tranquil relaxation noise, we provide the serene backdrop to your day.</p>
+            <button class="got-it-btn" onclick="closeModal()">Got it</button>
+        </div>
+    </div>
 
-    </body>
+    <footer>© 2026 VibeSpace. Crafted for peaceful minds.</footer>
+
+    <script src="about.js"></script>
+</body>
 
 
 
