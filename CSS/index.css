@@ -203,19 +203,19 @@ p {
     color: #987db5;
     text-align: left;
     font-weight: 300;
-    line-height: 1.8;
+    line-height: 2.25;
 
     transition: transform 0.3s ease;
 
     cursor: pointer;}
 .btn1 h2 {
-    margin-top: auto; 
-    margin-bottom: 6px;
+    margin-top: 0px; 
+    margin-bottom: 20px;
 
     color: #ffffff; 
     font-size: 25px;
     font-weight: 300;}
-.btn1 hr {margin-top: 20px; margin-bottom: 0px;}
+.btn1 hr {margin-top: auto; margin-bottom: 10px;}
 .btn1 p {
     margin-top: 15px; 
     margin-bottom: 0px;
@@ -262,19 +262,19 @@ p {
     color: #987db5;
     text-align: left;
     font-weight: 300;
-    line-height: 1.8;
+    line-height: 2.25;
 
     transition: transform 0.3s ease;
 
     cursor: pointer;}
 .btn2 h2 {
-    margin-top: auto; 
-    margin-bottom: 6px;
+    margin-top: 0px; 
+    margin-bottom: 20px;
 
     color: #ffffff; 
     font-size: 25px; 
     font-weight: 300;}
-.btn2 hr {margin-top: 20px; margin-bottom: 0px;}
+.btn2 hr {margin-top: auto; margin-bottom: 10px;}
 .btn2 p {
     margin-top: 15px; 
     margin-bottom: 0px;
