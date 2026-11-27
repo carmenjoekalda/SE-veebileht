@@ -1,3 +1,5 @@
+// --- Kood oli koostatud Google Gemini abiga ---
+
 document.addEventListener("DOMContentLoaded", () => {
     const modeElement = document.querySelector(".mode-name");
     const timerDisplay = document.querySelector(".timer-value");
