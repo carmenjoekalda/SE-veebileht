@@ -1,3 +1,5 @@
+// Koodi autor - Carmen Jõekalda
+
 function openModal() {
   document.getElementById('aboutModal').style.display = 'flex';
 }
